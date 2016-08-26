@@ -1,0 +1,13 @@
+{
+  "name": "vampirecsg",
+  "version": "1.0.0",
+  "description": "Vampire the Masquerade CS Generator",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Kornelia Kobiela",
+  "license": "ISC"
+}
