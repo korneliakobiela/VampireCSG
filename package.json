@@ -9,5 +9,19 @@
     "start": "electron ."
   },
   "author": "Kornelia Kobiela",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korneliakobiela/VampireCSG.git"
+  },
+  "keywords": [
+    "vampire",
+    "game",
+    "rpg",
+    "generator"
+  ],
+  "bugs": {
+    "url": "https://github.com/korneliakobiela/VampireCSG/issues"
+  },
+  "homepage": "https://github.com/korneliakobiela/VampireCSG#readme"
 }
