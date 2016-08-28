@@ -19,6 +19,11 @@ body{
     color: #232323;
     -webkit-app-region: drag;
 }
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    line-height: 1em;
+    font-weight: 300;
+}
 header img{
     height: 75px;
     float: left;
@@ -67,10 +72,35 @@ header{
     box-sizing: border-box;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
-#input-form {
+
+nav button{
+    float: left;
+}
+.content {
     padding: 15px;
     column-count: 3; 
     column-gap: 30px;
+}
+label{
+    font-size: 20px;
+    width: 35%;
+    display: block;
+    float: left;
+}
+#personal-form input{
+    display: inline-block;
+    width: 50%;
+
+}
+#personal-form h2{
+    font-size: 28px;
+    margin: 0 15px;
+    font-weight: bold;
+    text-align: center;
+}
+#personal-form h3{
+    font-size: 20px;
+    text-align: center;
 }
 #input-form input{
     margin: 5px;
@@ -78,7 +108,7 @@ header{
     border-bottom: solid black 1px;
     background: none;
     font-family: "Bilbo", cursive;
-    font-size: 25px;
+    font-size: 20px;
     width:  100%;
     color: #660000;
 }

@@ -1,6 +1,7 @@
 const electron = require('electron');
 
 const app = electron.app;
+const ipc = electron.ipcMain;
 
 const BrowserWindow = electron.BrowserWindow;
 
@@ -22,7 +23,7 @@ function createWindow () {
 app.on('ready', createWindow);
 
 
-app.on('window-all-closed', function () {
+ipc.on('window-all-closed', function () {
 
     if (process.platform !== 'darwin') {
         app.quit()

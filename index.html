@@ -7,25 +7,47 @@
 <body>
 <header>
     <img src="img/VampireLogo.png">
-    <button id="random" class="active">Random Character</button>
-    <button id="personal">Your personal character</button>
+    <nav>
+        <button id="random" class="active">Random Character</button>
+        <button id="personal">Your personal character</button>
+    </nav>
+    <!--TODO: Add event to close application to exit button -->
     <button id="exit">X</button>
 </header>
-<section id="input-form">
+<section id="input-form" class="content">
     <input placeholder="Name" title="name">
-    <input placeholder="Player"  title="player">
-    <input placeholder="Chronicle"  title="chronicle">
-    <input placeholder="Nature"  title="nature">
+    <input placeholder="Player" title="player">
+    <input placeholder="Chronicle" title="chronicle">
+    <input placeholder="Nature" title="nature">
     <input placeholder="Demeanor" title="demeanor">
-    <input placeholder="Clan"  title="clan">
+    <input placeholder="Clan" title="clan">
     <input placeholder="Generation" title="generation">
     <input placeholder="Haven" title="haven">
     <input placeholder="Concept" title="Concept">
 </section>
 
-<section id="personal-form">
+<section id="personal-form" style="display: none">
     <!--TODO: Range dotted style -->
-    <input type="radio" title="my" >
+    <!--TODO: Setting value for ranges-->
+    <h2>Attributes</h2>
+    <div class="content">
+        <h3>Physical</h3>
+        <label for="strength">Strength: </label><input title="strength" id="strength" type="range">
+        <label for="dexterity">Dextercity: </label><input title="Dexterity" id="dexterity" type="range">
+        <label for="stamina">Stamina: </label><input title="Stamina" id="stamina" type="range">
+        <h3>Social</h3>
+        <label for="charisma">Charisma: </label><input title="Charisma" id="charisma" type="range">
+        <label for="manipulation">Manipulation: </label><input title="Manipulation" id="manipulation" type="range">
+        <label for="appearance">Appearance: </label><input title="Appearance" id="appearance" type="range">
+        <h3>Mental</h3>
+        <label for="perception">Perception: </label><input title="Perception" id="perception" type="range">
+        <label for="intelligence">Intelligence: </label><input title="Intelligence" id="intelligence" type="range">
+        <label for="will">Will: </label><input title="Will" id="will" type="range">
+    </div>
+    <h2>Abilities</h2>
+    <div class="content">
+
+    </div>
 </section>
 <button>Generate and Save</button>
 <script src="js/events.js"></script>
