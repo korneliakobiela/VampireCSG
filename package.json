@@ -23,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/korneliakobiela/VampireCSG/issues"
   },
-  "homepage": "https://github.com/korneliakobiela/VampireCSG#readme"
+  "homepage": "https://github.com/korneliakobiela/VampireCSG#readme",
+  "directories": {
+    "test": "test"
+  }
 }

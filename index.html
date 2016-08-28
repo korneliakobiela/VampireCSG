@@ -7,8 +7,9 @@
 <body>
 <header>
     <img src="img/VampireLogo.png">
-    <button class="active">Random Character</button>
-    <button>Your personal character</button>
+    <button id="random" class="active">Random Character</button>
+    <button id="personal">Your personal character</button>
+    <button id="exit">X</button>
 </header>
 <section id="input-form">
     <input placeholder="Name" title="name">
@@ -24,9 +25,10 @@
 
 <section id="personal-form">
     <!--TODO: Range dotted style -->
-
+    <input type="radio" title="my" >
 </section>
 <button>Generate and Save</button>
+<script src="js/events.js"></script>
 <script src="js/userdata.js">
 </script>
 

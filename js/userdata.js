@@ -25,9 +25,6 @@ var userdata = {
         this.concept = concept || '';
     }
 
-    //TODO: tests and methods to set and get
-
-
 
 };
 
