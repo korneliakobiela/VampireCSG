@@ -13,6 +13,10 @@ describe("UserData", function () {
             var player = new UserData.PlayerInput();
             expect(player).to.not.be.undefined;
         });
+        it('should return an object', function () {
+            var player = new UserData.PlayerInput();
+            expect(player).to.be.a('object');
+        });
         it('should return PlayerInput object with values', function () {
             var playerinput = new UserData.PlayerInput('a','a','a','a','a','a','a','a','a');
             var expected = {

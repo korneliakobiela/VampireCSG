@@ -1,13 +1,13 @@
 var userdata = {
 
     /**
-     *
+     * A Constructor for basic user form used to generate random character.
      * @param cname - character name
-     * @param player -
-     * @param chronicle
-     * @param nature
-     * @param demeanor
-     * @param clan
+     * @param player - players name
+     * @param chronicle - chronicle name
+     * @param nature - nature of vampier
+     * @param demeanor - demeanor of character
+     * @param clan - clan of character
      * @param generation
      * @param haven
      * @param concept
