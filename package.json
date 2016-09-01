@@ -1,6 +1,6 @@
 {
   "name": "vampirecsg",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Vampire the Masquerade CS Generator",
   "main": "main.js",
   "dependencies": {},
