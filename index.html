@@ -1,58 +1,90 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html >
+<head >
 
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header>
-    <img src="img/VampireLogo.png">
-    <nav>
-        <button id="random" class="active">Random Character</button>
-        <button id="personal">Your personal character</button>
-    </nav>
+    <link rel="stylesheet" href="style.css" >
+</head >
+<body >
+<header >
+    <img src="img/VampireLogo.png" >
+    <nav >
+        <button id="random" class="active" >Random Character</button >
+        <button id="personal" >Your personal character</button >
+    </nav >
     <!--TODO: Add event to close application to exit button -->
-    <button id="exit">X</button>
-</header>
-<section id="input-form" class="content">
-    <input placeholder="Name" title="name">
-    <input placeholder="Player" title="player">
-    <input placeholder="Chronicle" title="chronicle">
-    <input placeholder="Nature" title="nature">
-    <input placeholder="Demeanor" title="demeanor">
-    <input placeholder="Clan" title="clan">
-    <input placeholder="Generation" title="generation">
-    <input placeholder="Haven" title="haven">
-    <input placeholder="Concept" title="Concept">
-</section>
+    <button id="exit" >X</button >
+</header >
+<section id="input-form" class="content" >
+    <input placeholder="Name" title="name" >
+    <input placeholder="Player" title="player" >
+    <input placeholder="Chronicle" title="chronicle" >
+    <input placeholder="Nature" title="nature" >
+    <input placeholder="Demeanor" title="demeanor" >
+    <input placeholder="Clan" title="clan" >
+    <input placeholder="Generation" title="generation" >
+    <input placeholder="Haven" title="haven" >
+    <input placeholder="Concept" title="Concept" >
+</section >
 
-<section id="personal-form" style="display: none">
+<section id="personal-form" style="display: none" >
     <!--TODO: Range dotted style -->
     <!--TODO: Setting value for ranges-->
-    <h2>Attributes</h2>
-    <div class="content">
-        <h3>Physical</h3>
-        <label for="strength">Strength: </label><input title="strength" id="strength" type="range">
-        <label for="dexterity">Dextercity: </label><input title="Dexterity" id="dexterity" type="range">
-        <label for="stamina">Stamina: </label><input title="Stamina" id="stamina" type="range">
-        <h3>Social</h3>
-        <label for="charisma">Charisma: </label><input title="Charisma" id="charisma" type="range">
-        <label for="manipulation">Manipulation: </label><input title="Manipulation" id="manipulation" type="range">
-        <label for="appearance">Appearance: </label><input title="Appearance" id="appearance" type="range">
-        <h3>Mental</h3>
-        <label for="perception">Perception: </label><input title="Perception" id="perception" type="range">
-        <label for="intelligence">Intelligence: </label><input title="Intelligence" id="intelligence" type="range">
-        <label for="will">Will: </label><input title="Will" id="will" type="range">
-    </div>
-    <h2>Abilities</h2>
-    <div class="content">
-
-    </div>
-</section>
-<button>Generate and Save</button>
-<script src="node_modules/pouchdb/dist/pouchdb.min.js"></script>
-<script src="js/events.js"></script>
-<script src="js/userdata.js"></script>
-<script src="js/index.js"></script>
-</body>
-</html>
+    <h2 >Attributes</h2 >
+    <div class="content" >
+        <h3 >Physical</h3 >
+        <label for="strength" >Strength: </label ><input title="strength" id="strength" type="range" >
+        <label for="dexterity" >Dextercity: </label ><input title="Dexterity" id="dexterity" type="range" >
+        <label for="stamina" >Stamina: </label ><input title="Stamina" id="stamina" type="range" >
+        <h3 >Social</h3 >
+        <label for="charisma" >Charisma: </label ><input title="Charisma" id="charisma" type="range" >
+        <label for="manipulation" >Manipulation: </label ><input title="Manipulation" id="manipulation" type="range" >
+        <label for="appearance" >Appearance: </label ><input title="Appearance" id="appearance" type="range" >
+        <h3 >Mental</h3 >
+        <label for="perception" >Perception: </label ><input title="Perception" id="perception" type="range" >
+        <label for="intelligence" >Intelligence: </label ><input title="Intelligence" id="intelligence" type="range" >
+        <label for="will" >Will: </label ><input title="Will" id="will" type="range" >
+    </div >
+    <h2 >Abilities</h2 >
+    <div class="content" >
+        <h3 >Talent</h3 >
+        <label for="acting" >Acting</label ><input id="acting" title="Acting" type="range" >
+        <label for="alertness" >Alertness</label ><input id="alertness" title="Alertness" type="range" >
+        <label for="Athletics" >Athletics</label ><input id="Athletics" title="Athletics" type="range" >
+        <label for="Brawl" >Brawl</label ><input id="Brawl" title="Brawl" type="range" >
+        <label for="Dodge" >Dodge</label ><input id="Dodge" title="Dodge" type="range" >
+        <label for="Empathy" >Empathy</label ><input id="Empathy" title="Empathy" type="range" >
+        <label for="Intimidation" >Intimidation</label ><input id="Intimidation" title="Intimidation" type="range" >
+        <label for="Leadership" >Leadership</label ><input id="Leadership" title="Leadership" type="range" >
+        <label for="Streetwise" >Streetwise</label ><input id="Streetwise" title="Streetwise" type="range" >
+        <label for="Subterfuge" >Subterfuge</label ><input id="Subterfuge" title="Subterfuge" type="range" >
+        <h3 >Skills</h3 >
+        <label for="AnimalKen" >Animal Ken</label ><input id="AnimalKen" title="Animal Ken" type="range" >
+        <label for="Drive" >Drive</label ><input id="Drive" title="Drive" type="range" >
+        <label for="Etiquette" >Etiquette</label ><input id="Etiquette" title="Etiquette" type="range" >
+        <label for="Firearms" >Firearms</label ><input id="Firearms" title="Firearms" type="range" >
+        <label for="Melee" >Melee</label ><input id="Melee" title="Melee" type="range" >
+        <label for="Music" >Music</label ><input id="Music" title="Music" type="range" >
+        <label for="Repair" >Repair</label ><input id="Repair" title="Repair" type="range" >
+        <label for="Security" >Security</label ><input id="Security" title="Security" type="range" >
+        <label for="Stealth" >Stealth</label ><input id="Stealth" title="Stealth" type="range" >
+        <label for="Survival" >Survival</label ><input id="Survival" title="Survival" type="range" >
+        <h3 >Knowledges</h3 >
+        <label for="Bureaucracy" >Bureaucracy</label ><input id="Bureaucracy" title="Bureaucracy" type="range" >
+        <label for="Computer" >Computer</label ><input id="Computer" title="Computer" type="range" >
+        <label for="Finance" >Finance</label ><input id="Finance" title="Finance" type="range" >
+        <label for="Investigation" >Investigation</label ><input id="Investigation" title="Investigation" type="range" >
+        <label for="Law" >Law</label ><input id="Law" title="Law" type="range" >
+        <label for="Linguistics" >Linguistics</label ><input id="Linguistics" title="Linguistics" type="range" >
+        <label for="Medicine" >Medicine</label ><input id="Medicine" title="Medicine" type="range" >
+        <label for="Occult" >Occult</label ><input id="Occult" title="Occult" type="range" >
+        <label for="Politics" >Politics</label ><input id="Politics" title="Politics" type="range" >
+        <label for="Science" >Science</label ><input id="Science" title="Science" type="range" >
+    </div >
+</section >
+<button >Generate and Save</button >
+<script src="node_modules/pouchdb/dist/pouchdb.min.js" ></script >
+<script src="js/events.js" ></script >
+<script src="js/userdata.js" ></script >
+<script src="js/index.js" ></script >
+</body >
+</html >

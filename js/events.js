@@ -20,7 +20,6 @@ var events = {
      */
     menuButtonHandler: function () {
         var buttons = this.getButtons('nav');
-        console.log(buttons);
         for (var i = 0; i < buttons.length; i++) {
             buttons[i].addEventListener('click', function () {
                 document.querySelector('.active').classList.toggle('active', false);
