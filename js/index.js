@@ -1,7 +1,9 @@
 /**
  * Created by kornelia on 29.08.16.
  */
-(function () {
+
+window.onload = function () {
+    userdata.setRangeInput();
     events.menuButtonHandler();
-    events.closeProgram();
-})();
+    events.closeWindow();
+};

@@ -2,6 +2,7 @@
  * Created by kornelia on 27.08.16.
  */
 var expect = require('chai').expect;
+var should = require('chai').should();
 var UserData = require('../js/userdata.js');
 
 describe("UserData", function () {
@@ -38,6 +39,12 @@ describe("UserData", function () {
             var defaultparam = new UserData.PlayerInput('','','','','','','','','');
 
             expect(player).to.eql(defaultparam)
+        });
+    });
+    describe('setRangeInput()',function () {
+        it('should exists', function () {
+            var range = UserData.setRangeInput();
+            should.exist(range);
         });
     });
 

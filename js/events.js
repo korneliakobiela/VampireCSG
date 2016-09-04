@@ -37,10 +37,12 @@ var events = {
             })
         }
     },
+
     /**
      * Event for close main window
      */
-    closeProgram: function () {
+
+    closeWindow: function () {
         var closeEl = document.querySelector('#exit');
         closeEl.addEventListener('click', function () {
             var window = remote.getCurrentWindow();
